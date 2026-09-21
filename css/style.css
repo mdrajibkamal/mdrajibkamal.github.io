@@ -73,7 +73,12 @@ a:hover { text-decoration: underline; }
   align-items: start;
 }
 
-.sidebar { text-align: center; }
+.sidebar {
+  text-align: center;
+  position: sticky;
+  top: 95px;
+  align-self: start;
+}
 .profile-photo {
   width: 230px;
   height: 270px;
@@ -204,7 +209,11 @@ a:hover { text-decoration: underline; }
     padding-top: 34px;
   }
   .profile-photo { width: 220px; height: 250px; }
-  .sidebar { border-bottom: 1px solid var(--line); padding-bottom: 26px; }
+  .sidebar {
+  position: static;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 26px;
+}
   .card-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
 }
